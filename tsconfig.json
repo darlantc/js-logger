@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "declaration": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "dist",
+    "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "es2017"
+    "lib": ["es6", "dom", "es2017"],
+    "target": "es5"
   },
   "compileOnSave": true,
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }

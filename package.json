@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/darlantc/simplyas-js-logger/issues"
   },
-  "homepage": "https://github.com/darlantc/simplyas-js-logger#readme"
+  "homepage": "https://github.com/darlantc/simplyas-js-logger#readme",
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
 }
