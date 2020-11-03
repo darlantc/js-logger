@@ -18,8 +18,7 @@ export function configureLogger(options: {
   window.Logger_shouldDebug = options.shouldDebug || window.Logger_shouldDebug;
   window.Logger_logStyle = options.logStyle || window.Logger_logStyle;
   window.Logger_infoStyle = options.infoStyle || window.Logger_infoStyle;
-  window.Logger_warningStyle =
-    options.warningStyle || window.Logger_warningStyle;
+  window.Logger_warningStyle = options.warningStyle || window.Logger_warningStyle;
   window.Logger_errorStyle = options.errorStyle || window.Logger_errorStyle;
 }
 
