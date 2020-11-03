@@ -2,13 +2,19 @@
   "name": "simplyas-js-logger",
   "version": "1.0.0",
   "description": "Fancy and Easy to customize Javascript utility to log beautiful messages on console",
-  "main": "/dist/logger.js",
+  "main": "lib/logger.js",
+  "types": "lib/logger.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json",
-    "test-watch": "jest --config jestconfig.json --watch"
+    "test-watch": "jest --config jestconfig.json --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
