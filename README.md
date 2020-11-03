@@ -4,5 +4,5 @@ Fancy and Easy to customize Javascript utility to log beautiful messages on cons
 
 ## TODO
 
-[ ] Documentation
-[ ] Tests
+- [ ] Documentation
+- [ ] Tests
